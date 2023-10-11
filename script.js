@@ -1,7 +1,7 @@
-var css = document.querySelector("h3");
-var color1 = document.querySelector(".color1");
-var color2 = document.querySelector(".color2");
-var body = document.getElementById("gradient");
+const css = document.querySelector("h3");
+const color1 = document.querySelector(".color1");
+const color2 = document.querySelector(".color2");
+const body = document.getElementById("gradient");
 
 function setGradient() {
 	body.style.background = 
@@ -14,15 +14,30 @@ function setGradient() {
 	css.textContent = body.style.background + ";";
 }
 
-//This colour inputs match the background 
+//These color inputs match the background 
 //generated on the first page load, and 
 //it displays the initial CSS linear 
 //gradient property on page load. 
-setGradient();
+//setGradient();
 
 color1.addEventListener("input", setGradient);
-
 color2.addEventListener("input", setGradient);
 
-//I skipped the random generator because 
-//I have already done that on Khan Academy. 
+// Random Colors Selector  
+const randomColorButton = document.querySelector('.random-color-button');
+
+randomColorButton.addEventListener('click', () => {
+	function randomColorGenerator() {
+		const letters = '0123456789ABCDEF';
+		let color = '#';
+		for (let i = 0; i < 6; i++) {
+			color += letters[Math.floor(Math.random() * 16)];
+		}
+		return color;
+	}
+
+	color1.value = randomColorGenerator()
+	color2.value = randomColorGenerator()
+	
+	setGradient();
+}); 
