@@ -18,7 +18,7 @@ function setGradient() {
 //generated on the first page load, and 
 //it displays the initial CSS linear 
 //gradient property on page load. 
-//setGradient();
+setGradient();
 
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
