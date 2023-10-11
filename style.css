@@ -1,7 +1,7 @@
 body {
 	font: 'Raleway', sans-serif;
     font-size: 16px;
-    min-width: 320px;
+    min-width: 420px;
     color: rgba(0,0,0,.5);
     text-align: center;
     text-transform: uppercase;
@@ -34,8 +34,16 @@ h3 {
     border-radius: 20px;
     font-size: 1rem;
     padding: .5em;
+    margin-top: 1em;
 }
 
 .random-color-button:active { 
     background-color: rgba(100, 100, 100, .5);
+}
+
+/*-----HANDLE SMALLER SCREEN SIZE-------------------------------------*/
+@media screen and (max-width: 700px) {
+    h1 {
+        font: 900 1.75em 'Raleway', sans-serif;    
+    }
 }
