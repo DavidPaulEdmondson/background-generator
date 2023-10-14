@@ -1,8 +1,13 @@
 body {
 	font: 'Raleway', sans-serif;
     font-size: 16px;
-    min-width: 420px;
-    color: rgba(0,0,0,.5);
+    min-width: 320px;
+    color: rgba(0,0,0,.7);
+    text-shadow: 
+        -1px 0 rgba(240, 240, 240, 0.9), 
+        0 1px rgba(240, 240, 240, 0.9), 
+        1px 0 rgba(240, 240, 240, 0.9), 
+        0 -1px rgba(240, 240, 240, 0.9);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .5em;
@@ -12,7 +17,7 @@ body {
 
 h1 {
     font: 600 3.5em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
+    color: rgba(0,0,0,.7);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .5em;
@@ -21,15 +26,16 @@ h1 {
 
 h3 {
 	font: 900 1em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
+    color: rgba(0,0,0,.7);
     text-align: center;
     text-transform: none;
     letter-spacing: 0.01em;
+    margin-bottom: 1em;
 }
 
 .random-color-button {
-    background-color: rgba(0, 0, 0, .5);
-    border: 4px solid rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, .7);
+    border: 4px solid rgba(240, 240, 240, 0.9);
     color: rgb(240, 240, 240, .9);
     border-radius: 20px;
     font-size: 1rem;
@@ -44,6 +50,6 @@ h3 {
 /*-----HANDLE SMALLER SCREEN SIZE-------------------------------------*/
 @media screen and (max-width: 700px) {
     h1 {
-        font: 900 1.75em 'Raleway', sans-serif;    
+        font: 900 1.25em 'Raleway', sans-serif;    
     }
 }
